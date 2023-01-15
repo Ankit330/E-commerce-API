@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static('uploads'));
 
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://AnkitGupta:123@cluster0.qmb2jtu.mongodb.net/ecommerce?retryWrites=true&w=majority").then(function(){
+mongoose.connect("mongodb+srv://AnkitGupta:ankit123@cluster0.qmb2jtu.mongodb.net/ecommerce?retryWrites=true&w=majority").then(function(){
 
     app.get("/" , function(req, res){
         res.send("Ecommerce Setup");
